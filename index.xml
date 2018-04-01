@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>齐林的博客</title>
+    <link>http://larryqi.github.io/</link>
+    <description>Recent content on 齐林的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2018 13:36:44 +0800</lastBuildDate>
+    
+	<atom:link href="http://larryqi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://larryqi.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 2018 13:36:44 +0800</pubDate>
+      
+      <guid>http://larryqi.github.io/about/</guid>
+      <description>Hi, my name is Lin Qi ,and I graduated from Shanghai Jiao Tong University, with a Master’s degree of Engineering in 2018. My current location is Shanghai, in China.  On the web and with friends, I am also known as &#34;larryqi&#34;, which has been my nickname since a long time ago.  You should probably also know that I do not have a sleep schedule, which means that I am usually awake whenever there is work to do.</description>
+    </item>
+    
+    <item>
+      <title>How to talk about the economy</title>
+      <link>http://larryqi.github.io/posts/how-to-talk-about-the-economy/</link>
+      <pubDate>Sat, 16 Apr 2016 13:36:44 +0800</pubDate>
+      
+      <guid>http://larryqi.github.io/posts/how-to-talk-about-the-economy/</guid>
+      <description>How to talk about the economy</description>
+    </item>
+    
+    <item>
+      <title>How to improve your listening</title>
+      <link>http://larryqi.github.io/posts/my-first-post/</link>
+      <pubDate>Wed, 16 Mar 2016 13:36:44 +0800</pubDate>
+      
+      <guid>http://larryqi.github.io/posts/my-first-post/</guid>
+      <description>How to imporove your listening in English
+ Watch movies or T.V.
+ first time use your native language subtitle then change it to English subtitle Watch without subtitle  Listen to music
+ not to learn grammar lyric  Go out
+ go out to the country where people communicate in English. listen to people talking make friends with foreigner   </description>
+    </item>
+    
+  </channel>
+</rss>
