@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.37.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> A Gentle Guide to Machine Learning &middot; 齐林的博客</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://larryqi.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://larryqi.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://larryqi.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://larryqi.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="齐林的博客" />
+
+  
+</head>
+
+  <body class=" ">
+  <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://larryqi.github.io/"><h1>齐林的博客</h1></a>
+      <p class="lead">
+       Actions speak louder than words. 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="https://larryqi.github.io/">Home</a> </li>
+      <li><a href="/about/"> About </a></li>
+    </ul>
+
+    <p>&copy; 2018. All rights reserved. </p>
+  </div>
+</div>
+
+    <div class="content container">
+    <div class="post">
+  <h1> A Gentle Guide to Machine Learning</h1>
+  <span class="post-date">Fri, Feb 20, 2015</span>
+  <p><i>Original address: <a href="http://blog.monkeylearn.com/a-gentle-guide-to-machine-learning/">A Gentle Guide to Machine Learning</a></i></p>
+<p><span>Machine Learning is a subfield within Artificial Intelligence that builds algorithms that allow computers to learn to perform tasks from data instead of being explicitly programmed.</span></p>
+<p><span style="font-weight: 400;">Got it? We can make machines learn to do things! The first time I heard that, it blew my mind. That means that we can program computers to learn things by themselves!</span></p>
+<p><span style="font-weight: 400;">The ability of learning is one of the most important aspects of intelligence. Translating that power to machines, sounds like a huge step towards making them more intelligent. And in fact, Machine Learning is the area that is making most of the progress in Artificial Intelligence today; being a trendy topic right now and pushing the possibility to have more intelligent machines.</span></p>
+<p><span style="font-weight: 400;">This post will try to give the novice reader a brief introduction to Machine Learning. I&#8217;ll give a general overview of important concepts, applications and challenges when working with Machine Learning. It&#8217;s not the goal of this post to give a formal or exhaustive description about the topic, but to give some initial concepts to invite the reader to continue investigating.</span></p>
+<h2><strong>The real thing about Machine Learning</strong></h2>
+<p><span style="font-weight: 400;">Alright, not all is so beautiful at it sounds, Machine Learning has its limits. Still, we can&#8217;t build intelligent machines like </span><i><span style="font-weight: 400;">Data</span></i><span style="font-weight: 400;"> from </span><i><span style="font-weight: 400;">Star Trek</span></i><span style="font-weight: 400;"> or </span><i><span style="font-weight: 400;">Hal 9000</span></i><span style="font-weight: 400;"> from </span><i><span style="font-weight: 400;">2001 a Space Odyssey</span></i><span style="font-weight: 400;">. However, we have plenty of examples of </span><b>real world applications</b><span style="font-weight: 400;"> where Machine Learning works like a charm. The following are some of the most common categories of practical Machine Learning applications:</span></p>
+<h3><b>Image Processing</b></h3>
+<p><span style="font-weight: 400;">Image processing problems basically have to analyze images to get data or do some transformations. Some examples are:</span></p>
+<ul>
+<li style="font-weight: 400;"><b>Image tagging</b><span style="font-weight: 400;"><span style="font-weight: 400;">, like in Facebook, when the algorithm automatically detects that your face or the face of your friends appears in a photo. Basically a Machine Learning algorithm learns from the photos you manually tag.</span></span></li>
+<li style="font-weight: 400;"><b>Optical Character Recognition</b><span style="font-weight: 400;"><span style="font-weight: 400;"> (OCR), when algorithms learn to transform a manuscript or scanned text document into a digital version. The algorithm has to learn to transform an image of a written character into the corresponding digital letter.</span></span></li>
+<li style="font-weight: 400;"><b>Self-driving cars</b><span style="font-weight: 400;">: part of the mechanisms that allow cars to drive by themselves use image processing. A Machine Learning algorithm learns where&#8217;s the edge of the road, if there&#8217;s a stop sign or a car is approaching by looking at each frame taken by a video camera.</span></li>
+</ul>
+<h3><b>Text Analysis</b></h3>
+<p><span style="font-weight: 400;">Text analysis are processes where we extract or classify information from text, like tweets, emails, chats, documents, etc. Some popular examples are:</span></p>
+<ul>
+<li style="font-weight: 400;"><b>Spam filtering</b><span style="font-weight: 400;"><span style="font-weight: 400;">, one of the most known and used text classification applications (assign a category to a text). Spam filters learn to classify an email as spam or ham depending on the content and the subject.</span></span></li>
+<li style="font-weight: 400;"><b>Sentiment Analysis</b><span style="font-weight: 400;"><span style="font-weight: 400;">, another application of text classification where an algorithm must learn to classify an opinion as positive, neutral or negative depending on the mood expressed by the writer.</span></span></li>
+<li style="font-weight: 400;"><b>Information Extraction</b><span style="font-weight: 400;">, from a text, learn to extract a particular piece of information or data, for example, extracting addresses, entities, keywords, etc.</span></li>
+</ul>
+<h3><b>Data Mining</b></h3>
+<p>Data mining is the process of discovering patterns or making predictions from data. The definition is a bit generic, but think of it as mining useful information from a huge table in a database. Each row would be our training instances, and each column a feature. We may be interested in predicting a new column in that table based on the rest of the columns, or discover patterns to group the rows. For example:</p>
+<ul>
+<li><strong>Anomaly detection</strong>: detect outliers, for example for credit card fraud detection, you could detect which transactions are outliers from the usual purchasing pattern of a user.</li>
+<li><strong>Association rules</strong>: for example, in a supermarket or e-commerce site, you can discover customer purchasing habits by looking at which products are bought together. This information can be used for marketing purposes.</li>
+<li><strong>Grouping</strong>: for example, in a SaaS platform, group users by their behaviour or their profile.</li>
+<li><strong>Predictions</strong>: predict a variable (column in a database) from the rest of the variables. For example, you could predict the credit score of new customers in a bank based by learning from the profiles and credit score of current customers.</li>
+</ul>
+<h3><b>Video Games &amp; Robotics</b></h3>
+<p><span style="font-weight: 400;">Video games and robotics have been a huge field where Machine Learning has been applied. In general we have an agent (game character or robot) that has to move within an environment (a virtual environment in a video game or physical environment in the case of robots). Machine Learning then can be used to allow the agent to perform tasks, like moving in an environment while avoiding obstacles or enemies. A very popular Machine Learning technique used in these cases is </span><a href="https://en.wikipedia.org/wiki/Reinforcement_learning"><span style="font-weight: 400;">Reinforcement Learning</span></a><span style="font-weight: 400;">, where the agent learns to perform a task by learning from the reinforcement of the environment (the reinforcement is negative if it hits an obstacle or positive if it gets to the goal).</span></p>
+<h2><strong>Alright, I got the value of Machine Learning, but how does it work?</strong></h2>
+<p><span style="font-weight: 400;">One of the first books I read about Machine Learning about ten years ago was </span><a href="http://www.amazon.com/Machine-Learning-Tom-M-Mitchell/dp/0070428077/ref=sr_1_10?ie=UTF8&amp;qid=1440450490&amp;sr=8-10&amp;keywords=machine+learning"><i><span style="font-weight: 400;">Machine Learning</span></i><span style="font-weight: 400;"> by Tom Mitchell</span></a><span style="font-weight: 400;">. This book was written in 1997, but the general concepts remain valid today.</span></p>
+<p><span style="font-weight: 400;">From that book, I like the following formal definition about Machine Learning:</span></p>
+<p><i><span style="font-weight: 400;">A computer program is said to learn to perform a </span></i><b><i>task T</i></b><i><span style="font-weight: 400;"> from </span></i><b><i>experience E</i></b><i><span style="font-weight: 400;">, if its performance at task T, as measured by a </span></i><b><i>performance metric P</i></b><i><span style="font-weight: 400;">, improves with experience E over time.</span></i></p>
+<p><span style="font-weight: 400;">For example, an artificial game player that has to play chess (task T), could learn by looking at previous chess matches or playing against a tutor (experience E). It&#8217;s performance P can be measured by counting the percentage of games won against a human.</span></p>
+<p><span style="font-weight: 400;">Let&#8217;s picture that in a couple of more examples:</span></p>
+<ul>
+<li><span style="font-weight: 400;"><span style="font-weight: 400;"><strong>Example 1</strong>: A system that given an image, it has to say if Barack Obama&#8217;s face appears in that image (the generalization would be like Facebook&#8217;s auto tagging).</span></span></li>
+<li><span style="font-weight: 400;"><span style="font-weight: 400;"><strong>Example 2</strong>: A system that given a tweet, tells if it talks with a positive or negative mood.</span></span></li>
+<li><span style="font-weight: 400;"><strong>Example 3</strong>: A system that given some person&#8217;s profile, assigns a score representing the probability of that person paying a credit loan.</span></li>
+</ul>
+<p><span style="font-weight: 400;">In example 1, the task is to detect when Barack Obama&#8217;s face appears in an image. The experience could be a set of images where Barack Obama&#8217;s face appears and others where it doesn&#8217;t appear. The performance could be measured as the percentage of new images that our system correctly tags.</span></p>
+<p><span style="font-weight: 400;">In example 2, the task is to assign the sentiment of a tweet. The experience could be a set of tweets and their corresponding sentiment. The performance could be measured as the percentage of new tweets that our system correctly classifies.</span></p>
+<p><span style="font-weight: 400;">In example 3, the task is to assign a credit score. The experience could be a set of user profiles with their corresponding credit scores. The performance could be measured as the squared error (the difference between the predicted and expected score).</span></p>
+<p><span style="font-weight: 400;">In order to allow the algorithm to learn to transform the input to the desired output, you have to provide what is called training instances or </span><b>training examples</b><span style="font-weight: 400;">, which in Mitchell&#8217;s definition are defined as experience E. A training set is a set of instances that will work as examples from which the Machine Learning algorithm will learn to perform the desired task. Pretty intuitive, isn&#8217;t it? It&#8217;s like when you show a little baby how to throw a ball, you throw the ball a couple of times to show him how to do it, and by looking at those examples, he starts to learn to do it himself.</span></p>
+<p><span style="font-weight: 400;">Every training instance usually is represented as a fixed set of attributes or </span><b>features</b><span style="font-weight: 400;">. The features are the way to characterize each instance. For instance, in example 1, an image could be characterized by the gray level of each of its pixels. In example 2, a tweet could be characterized by the words that appear in the tweet. In example 3, a credit record could be represented by the age of the person, the salary, the profession, etc.</span></p>
+<p><span style="font-weight: 400;">Calculating and selecting the proper features to represent an instance is one of the most important tasks when working with Machine Learning, we&#8217;ll take a look at this point later in this post.</span></p>
+<h2><strong>Categories of Machine Learning algorithms</strong></h2>
+<p><span style="font-weight: 400;">At this point we have to talk about two general categories of Machine Learning algorithms: </span><b>Supervised Learning</b><span style="font-weight: 400;"> or </span><b>Unsupervised Learning </b><span style="font-weight: 400;">algorithms. The main difference between both approaches resides in the way we feed training examples to our algorithm, how the algorithm uses them and the type of problems they solve.</span></p>
+<h3><b>Supervised Learning</b></h3>
+<p><span style="font-weight: 400;">In the case of </span><a href="https://en.wikipedia.org/wiki/Supervised_learning"><span style="font-weight: 400;">supervised learning</span></a><span style="font-weight: 400;">, the Machine Learning algorithm can be seen as a process that has to transform a particular input to a desired output.</span></p>
+<p><span style="font-weight: 400;">The Machine Learning process then has to learn how to transform every possible input to the correct/desired output, so each training example has the particular input and the desired output.</span></p>
+<p><span style="font-weight: 400;">In the example about the artificial chess player, our input would be a particular chess board state, and the output would be the best possible movement in that situation.</span></p>
+<p><span style="font-weight: 400;">Depending on the type of output, we have two subtypes of supervised learning:</span></p>
+<h4><b>Classification</b></h4>
+<p><span style="font-weight: 400;">When the output value belongs to a discrete and finite set, we&#8217;re talking about a </span><a href="https://en.wikipedia.org/wiki/Statistical_classification"><span style="font-weight: 400;">classification</span></a><span style="font-weight: 400;">. Example 2 can be solved as a classification problem, the output is a finite set of options: positive, negative or neutral. In this case, our training examples will look like:</span></p>
+<p><a href="https://blog.monkeylearn.com/wp-content/uploads/2015/08/table1.png"><img class=" size-full wp-image-682 aligncenter" src="https://blog.monkeylearn.com/wp-content/uploads/2015/08/table1.png" alt="table1" width="807" height="242" /></a></p>
+<h4><b>Regression</b></h4>
+<p><span style="font-weight: 400;">When the output value is a continuous number, for example, a probability, then we&#8217;re talking about a </span><a href="https://en.wikipedia.org/wiki/Regression_analysis"><span style="font-weight: 400;">regression</span></a><span style="font-weight: 400;"> problem. Example 3 is a regression as the result is a number between 0 and 1 that represents the probability that a person will pay his debts. In this case, our training examples will look like:</span></p>
+<p><a href="https://blog.monkeylearn.com/wp-content/uploads/2015/08/table2.png"><img class=" size-full wp-image-683 aligncenter" src="https://blog.monkeylearn.com/wp-content/uploads/2015/08/table2.png" alt="table2" width="804" height="189" /></a></p>
+<p><span style="font-weight: 400;">Supervised learning is the most popular category of Machine Learning algorithms. The disadvantage of using this approach is that for every training example, we have to provide the correct output, and in many cases, this is quite expensive. For example, in the case of sentiment analysis, if we need 10,000 training examples (tweets), we would have to tag each tweet with the correct sentiment (positive, negative or neutral). That would require a group of humans to read and tag each tweet (quite a time consuming and boring task). This is usually a very </span><b>common bottleneck for Machine Learning</b><span style="font-weight: 400;"> algorithms: gather quality tagged training data.</span></p>
+<h3><b>Unsupervised Learning</b></h3>
+<p><span style="font-weight: 400;">There&#8217;s a second category of Machine Learning algorithms called </span><a href="https://en.wikipedia.org/wiki/Unsupervised_learning"><span style="font-weight: 400;">unsupervised learning</span></a><span style="font-weight: 400;">. In this case, the training examples only need to be the input to the algorithm, but not the desired output. The typical use case is to discover the hidden structure and relations between the training examples. A typical example are </span><a href="https://en.wikipedia.org/wiki/Cluster_analysis"><span style="font-weight: 400;">clustering algorithms</span></a><span style="font-weight: 400;">, where we learn to find similar instances or groups of instances (clusters). E.g.: we have a news article and we want to get similar ones to recommend. Some clustering algorithms like </span><a href="https://en.wikipedia.org/wiki/K-means_clustering"><span style="font-weight: 400;">K-means</span></a><span style="font-weight: 400;"> &#8220;learn&#8221; to do that by only looking at the input.</span></p>
+<h2><strong>Machine Learning algorithms</strong></h2>
+<p><span style="font-weight: 400;">Ok, here&#8217;s when the math and logic comes to action. In order to transform an input to a desired output we can use different models. Machine Learning is not a unique type of algorithm, perhaps you heard about Support Vector Machines, Naive Bayes, Decision Trees or Deep Learning. Those are different Machine Learning algorithms that try to solve the same problem: learn to transform every input to the correct output.</span></p>
+<p><span style="font-weight: 400;">Those different Machine Learning algorithms use different paradigms or techniques to do the learning process and represent the knowledge of what they have learned.</span></p>
+<p><span style="font-weight: 400;">But before we go ahead and talk about each algorithm, a common principle is that, Machine Learning algorithms try to</span><b> make generalizations</b><span style="font-weight: 400;">. That is, they try to explain something with the most simple theory, a principle known as the </span><a href="https://en.wikipedia.org/wiki/Occam%27s_razor"><span style="font-weight: 400;">Occam&#8217;s razor</span></a><span style="font-weight: 400;">. Every Machine Learning algorithm, regardless of the paradigm it uses, will try to create the simplest hypothesis (the one that makes fewest assumptions) that explains most of the training examples.</span></p>
+<p><span style="font-weight: 400;">There are lot of Machine Learning algorithms, but let&#8217;s briefly mention three of the most popular ones:</span></p>
+<ul>
+<li style="font-weight: 400;"><strong>Support Vector Machines</strong>: The model tries to build a set of hyperplanes in a high dimensional space that tries to separate instances of different classes by getting the largest separation between the nearest instances from different classes. The concept intuitively is simple, but the model can be very complex and powerful. In fact, for some domains it is one of the best Machine Learning algorithms you can use nowadays.</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;"><strong>Probabilistic Models</strong>: these models usually try to predict the correct response by modeling the problem with a probability distribution. Perhaps the most popular algorithms in this category are <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier">Naive Bayes classifiers</a>, that use the Bayes theorem alongside with strong independence assumptions between the features. One of their advantages besides being a simple yet powerful model, is that they return not only the prediction but also the degree of certainty, which can be very useful.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;"><strong>Deep Learning</strong>: is a new trend in Machine Learning based on the very known <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Artificial Neural Network</a> models. Neural networks have a connectionist approach, they try to emulate (in a very simplified way) the way the brain works. Basically they consist of a huge set of interconnected neurons (the basic unit of processing), organized in various layers. Deep learning has, in a few words, developed new structures with deeper layers and improved the learning algorithms to not only try to learn but also to build structures to represent the most important features automatically with higher levels of abstraction.</span></li>
+</ul>
+<h2><strong>Important aspects when dealing with Machine Learning</strong></h2>
+<p><span style="font-weight: 400;">Again, Machine Learning sounds like a beautiful concept, and it is, but there are some processes involved in Machine Learning that are not so automatic. In fact, many times manual steps are required when designing the solution. Nevertheless, they are of </span><b>huge importance</b><span style="font-weight: 400;"> in order to obtain decent results. Some of those aspects are:</span></p>
+<h3><b>Which type of Machine Learning algorithm should I use?</b></h3>
+<p><b>Supervised or unsupervised?</b></p>
+<p><span style="font-weight: 400;">Do you have tagged data? That is, the input with its corresponding output? In that case you can apply supervised learning algorithms. If not, perhaps unsupervised algorithms can solve the problem.</span></p>
+<p><b>Classification, regression or clustering?</b></p>
+<p><span style="font-weight: 400;">That mainly depends on what you&#8217;re trying to solve. If you want to tag data (assign a tag within a discrete set of options), classification may be the right option. If on the other hand, you need to assign a number, for example a score, regression may be the best option for you. Perhaps what you need is to recommend similar products to users depending on what they are currently looking at in an e-commerce site, in that case clustering could be the best option for you.</span></p>
+<p><b>Deep Learning, SVM, Naive Bayes, Decision Trees… which is the best?</b></p>
+<p><span style="font-weight: 400;">The answer for me is: none of them. Obviously Deep Learning and Support Vector Machines have demonstrated they are the most powerful and versatile in different applications. But take into account that depending on the particular application, some Machine Learning algorithms may be a better choice than others. Just see which are their individual strengths and try them!</span></p>
+<h3><b>Feature engineering</b></h3>
+<p><span style="font-weight: 400;">Feature engineering is the process by which we extract and select the most important features to be used to represent our training examples and instances to be processed by our Machine Learning algorithm. This process is one of the most important aspects of Machine Learning (and sometimes not given enough credit and importance).</span></p>
+<p><span style="font-weight: 400;">Pay attention to that: if you don&#8217;t provide quality features to your algorithm, the results will be bad, no matter if you use the best Machine Learning algorithm out there. It&#8217;s like trying to learn to read with your eyes in complete darkness, you won&#8217;t be able to do that, no matter how intelligent you are.</span></p>
+<h4><b>Feature extraction</b></h4>
+<p><span style="font-weight: 400;">In order to feed the Machine Learning algorithm with data, you usually have to transform the raw data into something that the algorithm can &#8216;understand&#8217;. That process is known as </span><b>feature extraction</b><span style="font-weight: 400;">. Usually we&#8217;re talking about transforming the raw data into a vector of features.</span></p>
+<p><span style="font-weight: 400;">In example 1, how do we feed the Machine Learning algorithm with an image?</span></p>
+<p><span style="font-weight: 400;">Well, a straightforward approach would be to transform the image into a vector where each component is the gray value of each pixel in the image. So, each component or feature, would be a number between say 0 and 255, 0 being black, 255 white and the range between 1 to 254 the possible shades of gray.</span></p>
+<p><span style="font-weight: 400;">That approach may work, but perhaps it would work better if we provide higher level features:</span></p>
+<ul>
+<li style="font-weight: 400;">does the image contain the face of a person?</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">what&#8217;s the skin color?</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">what&#8217;s the eye color?</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">does the face have hair?</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">…</span></li>
+</ul>
+<p><span style="font-weight: 400;">Those are higher level features, that feed the algorithm with more knowledge than just the gray level of each pixel (and their calculation may be done by other Machine Learning algorithms!). By providing higher level features we&#8217;re &#8216;helping&#8217; the Machine Learning algorithm with better information to learn to decide if my or someone else&#8217;s face appears in an image.</span></p>
+<p><span style="font-weight: 400;">If we provide better feature extraction:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">We&#8217;ll have more chances that our algorithm will learn to perform the desired task.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">We may need less training examples to learn.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">As a result, we may reduce dramatically the time needed to train our model.</span></li>
+</ul>
+<h4><b>Feature selection</b></h4>
+<p><span style="font-weight: 400;">Sometimes (not to say mostly), the features that we selected to feed our algorithm may be useless. For example, when trying to tag the sentiment of a tweet, we could add the length of the tweet as a feature, the time of the day the tweet was written, etc. Those features may be useful or not, and there are automatic methods to figure out which of them are the most useful. Intuitively, </span><b>feature selection algorithms</b><span style="font-weight: 400;"> use techniques to score each feature and return only they most valuable ones according to that score.</span></p>
+<p><span style="font-weight: 400;">Another important thing to keep in mind is: avoid using huge feature sets. One may be tempted to add all the possible features to the model and let the algorithm just learn. But that&#8217;s not a good idea, as we add more features to represent our instances, the dimension of the space increases, making it more sparse. Intuitively, as we get more features, we have to get much many instances to represent a decent amount of the combinations. This is a very common problem known as the </span><a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">curse of dimensionality</a><span style="font-weight: 400;">, as the complexity of the model grows, the number of training examples needed grows exponentially, and believe me, that&#8217;s a problem.</span></p>
+<h3><b>Training examples</b></h3>
+<p><span style="font-weight: 400;">So, you have to feed the Machine Learning algorithm with training examples. Depending on the problem you want to solve, we may be talking in the order of hundreds, thousands, millions or billions of training examples. Besides, it&#8217;s very important to keep the quality of the examples, if you feed the algorithm with wrong examples, the chances to obtain good results are low.</span></p>
+<p><span style="font-weight: 400;">Collecting quality data in huge volumes to train Machine Learning algorithms is usually an expensive thing to do. Unless you already have tagged data, you may have to manually tag the data yourself or pay others to do that. Some tools to try to solve that are <strong>crowdsourcing platforms</strong> where you can find labor to do the job. Also </span><b>bootstrapping</b><span style="font-weight: 400;"> is a way to try to make tagging more efficient by using your own Machine Learning model to help you.</span></p>
+<p><span style="font-weight: 400;">The general rule regarding training examples is: the more quality training data you can gather, the better results you may get.</span></p>
+<h3><b>Testing examples and performance metrics</b></h3>
+<p><span style="font-weight: 400;">After we train a Machine Learning algorithm, we have to test how well it performs. This is super important, otherwise you won&#8217;t know if your model actually learned anything!</span></p>
+<p><span style="font-weight: 400;">The concept is simple, we use a </span><b>testing set</b><span style="font-weight: 400;">, a set of instances not contained in the training set. Basically we&#8217;ll input every testing example to our model and see if it performs as expected. In the case of supervised learning classification, we just input each testing instance and check if the outputs are what we expected. If our model returns the correct output on 95% of the testing examples, we say that our model has an accuracy of 95%.</span></p>
+<p><span style="font-weight: 400;">It&#8217;s important to remember that the training and testing sets of instances must be disjoint, this is the only way to test the generalization and prediction power of your model. You may have very good results by measuring the accuracy in your training data, but get poor results when measuring in a separate testing set. That problem is known as </span><a href="https://en.wikipedia.org/wiki/Overfitting">overfitting</a><span style="font-weight: 400;">, that is, the algorithm overfits the training examples and has a poor predictive power. Usually the way to avoid that is to try to use a simpler model with less features, simplify the model and use a bigger and more representative training set.</span></p>
+<p><span style="font-weight: 400;">Accuracy is the most basic metric, you should also look at other metrics like </span><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Precision and Recall</a><span style="font-weight: 400;"> which will tell you how well the algorithm performs on each class (when working with supervised learning classification). </span><a href="https://en.wikipedia.org/wiki/Confusion_matrix">Confusion matrices</a><span style="font-weight: 400;"> are a great tool to see where our classification algorithm is &#8216;confusing&#8217; predictions.</span></p>
+<p><span style="font-weight: 400;">For regression and clustering problems you have other sets of metrics that will allow to see if your algorithm is performing well.</span></p>
+<h3><b>Performance</b></h3>
+<p><span style="font-weight: 400;">In real world applications, if you have to deploy a solution in production, you will have to build a robust and performant solution. In the case of Machine Learning applications, this can be a complex task. First, you have to select the Machine Learning framework, which is not easy as not all programming languages have strong tools on that. Python and </span><a href="http://scikit-learn.org/"><span style="font-weight: 400;">Scikit-learn</span></a><span style="font-weight: 400;"> are good examples of a programming language where a strong Machine Learning framework was built.</span></p>
+<p><span style="font-weight: 400;">Having chosen your framework, performance issues may arise. Depending on the amount of data, complexity and algorithm designed, it may take large amounts of computing power and memory to run the training process. You&#8217;ll probably have to run multiple trainings until you get decent results. Besides, usually you may be retraining your model to cover new instances and keep improving its accuracy.</span></p>
+<p><span style="font-weight: 400;">In order to train huge models and get fast results when using it, we&#8217;re usually talking of various GBs of RAM and multi-core machines to parallelize the processing.</span></p>
+<p><span style="font-weight: 400;">These are mostly practical issues, but definitively important ones if you want to deploy a real Machine Learning solution in production.</span></p>
+<h2><strong>Final words</strong></h2>
+<p><span style="font-weight: 400;">That&#8217;s it, a brief overview of what Machine Learning is about. There are plenty of other real world applications not covered here, plenty of other Machine Learning algorithms and concepts to talk about, but we leave the reader to do his/her own research on that.</span></p>
+<p><span style="font-weight: 400;">Machine Learning is powerful but hard, the difficulties and aspects to take into account described in this post are just the tip of the iceberg.</span></p>
+<p><span style="font-weight: 400;">Usually a certain background in computer science and in particular, Machine Learning is required to obtain decent results. One can end very disappointed by the many difficulties to solve before getting on track.</span></p>
+<p><span style="font-weight: 400;">This is why we created </span><a href="http://www.monkeylearn.com/"><span style="font-weight: 400;">MonkeyLearn</span></a><span style="font-weight: 400;">, to democratize the access to Machine Learning technologies applied to text analysis. To avoid reinventing the wheel and allow every software developer or entrepreneur to quickly get practical results. These are our main challenges, to a</span><span style="font-weight: 400;">bstract the end user of all of these problems, ranging from Machine Learning complexities to practical scalability issues to make just plug and play Machine Learning.</span></p>
+<p><span style="font-weight: 400;">Hope you enjoyed this post! Just drop me a line if you have any questions or comments!</span></p>
+
+</div>
+
+
+    </div>
+
+    
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on 齐林的博客</title>
+    <link>https://larryqi.github.io/categories/learning/</link>
+    <description>Recent content in Learning on 齐林的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Feb 2015 13:36:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://larryqi.github.io/categories/learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> A Gentle Guide to Machine Learning</title>
+      <link>https://larryqi.github.io/posts/a-gentle-guide-to-machine-learning/</link>
+      <pubDate>Fri, 20 Feb 2015 13:36:44 +0800</pubDate>
+      
+      <guid>https://larryqi.github.io/posts/a-gentle-guide-to-machine-learning/</guid>
+      <description>Original address: A Gentle Guide to Machine Learning
+Machine Learning is a subfield within Artificial Intelligence that builds algorithms that allow computers to learn to perform tasks from data instead of being explicitly programmed.
+Got it? We can make machines learn to do things! The first time I heard that, it blew my mind. That means that we can program computers to learn things by themselves!
+The ability of learning is one of the most important aspects of intelligence.</description>
+    </item>
+    
+  </channel>
+</rss>

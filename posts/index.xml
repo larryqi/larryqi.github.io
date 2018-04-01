@@ -17,7 +17,10 @@
       <pubDate>Sat, 16 Apr 2016 13:36:44 +0800</pubDate>
       
       <guid>https://larryqi.github.io/posts/how-to-talk-about-the-economy/</guid>
-      <description>How to talk about the economy</description>
+      <description>How to talk about the economy
+ GDP -&amp;gt; gross domestic product
+  This is the total value, the total monetary value of goods and services within a country.  fiscal
+  anything to do with money, anything to do with financial matters, especially when we’re talking about taxes. fiscal year : it’s the beginning of its tax year to the end of its tax year.  quarter</description>
     </item>
     
     <item>
@@ -31,6 +34,18 @@
  first time use your native language subtitle then change it to English subtitle Watch without subtitle  Listen to music
  not to learn grammar lyric  Go out
  go out to the country where people communicate in English. listen to people talking make friends with foreigner   </description>
+    </item>
+    
+    <item>
+      <title> A Gentle Guide to Machine Learning</title>
+      <link>https://larryqi.github.io/posts/a-gentle-guide-to-machine-learning/</link>
+      <pubDate>Fri, 20 Feb 2015 13:36:44 +0800</pubDate>
+      
+      <guid>https://larryqi.github.io/posts/a-gentle-guide-to-machine-learning/</guid>
+      <description>Original address: A Gentle Guide to Machine Learning
+Machine Learning is a subfield within Artificial Intelligence that builds algorithms that allow computers to learn to perform tasks from data instead of being explicitly programmed.
+Got it? We can make machines learn to do things! The first time I heard that, it blew my mind. That means that we can program computers to learn things by themselves!
+The ability of learning is one of the most important aspects of intelligence.</description>
     </item>
     
   </channel>
