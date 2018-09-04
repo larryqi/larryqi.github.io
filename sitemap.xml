@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://larryqi.github.io/posts/unit-testing-with-junit/</loc>
+    <lastmod>2016-07-22T15:46:54+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://larryqi.github.io/posts/how-to-talk-about-the-economy/</loc>
     <lastmod>2016-04-16T13:36:44+08:00</lastmod>
   </url>
@@ -52,6 +57,12 @@
   <url>
     <loc>https://larryqi.github.io/posts/</loc>
     <lastmod>2018-07-18T14:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://larryqi.github.io/categories/programming/</loc>
+    <lastmod>2016-07-22T15:46:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   

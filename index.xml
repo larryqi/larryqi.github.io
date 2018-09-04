@@ -34,6 +34,15 @@ Machine Learning (ML) A sub-field of AI, whose focus is to use data to train com
     </item>
     
     <item>
+      <title> Unit Testing with JUnit</title>
+      <link>https://larryqi.github.io/posts/unit-testing-with-junit/</link>
+      <pubDate>Fri, 22 Jul 2016 15:46:54 +0800</pubDate>
+      
+      <guid>https://larryqi.github.io/posts/unit-testing-with-junit/</guid>
+      <description>Table of Contents 1. The purpose of software tests 2. Testing terminology 3. Using JUnit 4. Using JUnit 4 5. Eclipse support for JUnit 4 6. Installation of JUnit 7. Setting Eclipse up for using JUnits static imports 8. Exercise: Using JUnit 9. Mocking 10. Overview of JUnit 5 11. Comparison of annotations between JUnit 4 and 5 12. About this website 13. JUnit Resources Appendix A: Copyright and License     This tutorial explains unit testing with JUnit 4.</description>
+    </item>
+    
+    <item>
       <title>How to talk about the economy</title>
       <link>https://larryqi.github.io/posts/how-to-talk-about-the-economy/</link>
       <pubDate>Sat, 16 Apr 2016 13:36:44 +0800</pubDate>
